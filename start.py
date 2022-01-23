@@ -1516,7 +1516,8 @@ def usgeaseets():
 
 def usge():
     usgeaseets()
-    print('* Coded By MH_ProDev For Better Stresser')
+    print('* Private version V2.1 * Boeing 747 Advanced DDoS *')
+    print('* Developed by Abo & Martin * Private API included *')
     print('python3 {} <method> <url> <socks_type5.4.1> <threads> <proxylist> <multiple> <timer>\n'.format(sys.argv[0]))
     print(' > Methods:')
     print(' - L3')
