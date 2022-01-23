@@ -1131,6 +1131,11 @@ def downloadsocks(choice):
         except:
             pass
         try:
+            r = requests.get("https://www.proxyscan.io/download?type=socks4", timeout=30)
+            f.write(r.content)
+        except:
+            pass
+        try:
             r = requests.get("https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks4.txt", timeout=30)
             f.write(r.content)
             f.close()
