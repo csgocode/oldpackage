@@ -1149,6 +1149,16 @@ def downloadsocks(choice):
     if choice == "5":
         f = open(out_file, 'wb')
         try:
+            r = requests.get("http://77.68.116.208/http.txt", timeout=30)
+            f.write(r.content)
+        except:
+            pass
+        try:
+            r = requests.get("http://list.didsoft.com/get?email=antoniostab68@gmail.com&pass=ae8hvc&pid=socks4100&showcountry=no", timeout=30)
+            f.write(r.content)
+        except:
+            pass
+        try:
             r = requests.get("https://api.proxyscrape.com/?request=displayproxies&proxytype=socks5&country=all",
                              timeout=30)
             f.write(r.content)
