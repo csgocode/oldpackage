@@ -1126,7 +1126,12 @@ def downloadsocks(choice):
         except:
             pass
         try:
-            r = requests.get("https://www.proxyscan.io/download?type=socks4", timeout=30)
+            r = requests.get("http://77.68.116.208/http.txt", timeout=30)
+            f.write(r.content)
+        except:
+            pass
+        try:
+            r = requests.get("http://list.didsoft.com/get?email=antoniostab68@gmail.com&pass=ae8hvc&pid=socks4100&showcountry=no", timeout=30)
             f.write(r.content)
         except:
             pass
