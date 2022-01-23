@@ -1120,13 +1120,8 @@ def downloadsocks(choice):
     global out_file
     if choice == "4":
         f = open(out_file, 'wb')
-       try:
-            r = requests.get("http://list.didsoft.com/get?email=antoniostab68@gmail.com&pass=ae8hvc&pid=socks4100&showcountry=no", timeout=30)
-            f.write(r.content)
-        except:
-            pass
         try:
-            r = requests.get("http://77.68.116.208/http.txt", timeout=30)
+            r = requests.get("https://www.proxy-list.download/api/v1/get?type=socks4", timeout=30)
             f.write(r.content)
         except:
             pass
@@ -1148,16 +1143,6 @@ def downloadsocks(choice):
             f.close()
     if choice == "5":
         f = open(out_file, 'wb')
-        try:
-            r = requests.get("http://list.didsoft.com/get?email=antoniostab68@gmail.com&pass=ae8hvc&pid=socks4100&showcountry=no", timeout=30)
-            f.write(r.content)
-        except:
-            pass
-        try:
-            r = requests.get("http://77.68.116.208/http.txt", timeout=30)
-            f.write(r.content)
-        except:
-            pass
         try:
             r = requests.get("https://api.proxyscrape.com/?request=displayproxies&proxytype=socks5&country=all",
                              timeout=30)
@@ -1191,16 +1176,6 @@ def downloadsocks(choice):
             f.close()
     if choice == "1":
         f = open(out_file, 'wb')
-       try:
-            r = requests.get("http://list.didsoft.com/get?email=antoniostab68@gmail.com&pass=ae8hvc&pid=socks4100&showcountry=no", timeout=30)
-            f.write(r.content)
-        except:
-            pass
-        try:
-            r = requests.get("http://77.68.116.208/http.txt", timeout=30)
-            f.write(r.content)
-        except:
-            pass
         try:
             r = requests.get("https://api.proxyscrape.com/?request=displayproxies&proxytype=http&country=all",
                              timeout=30)
@@ -1531,7 +1506,7 @@ def usgeaseets():
 
 def usge():
     usgeaseets()
-    print('* Boeing 747 v2 by Abo & Martin')
+    print('* Coded By MH_ProDev For Better Stresser')
     print('python3 {} <method> <url> <socks_type5.4.1> <threads> <proxylist> <multiple> <timer>\n'.format(sys.argv[0]))
     print(' > Methods:')
     print(' - L3')
