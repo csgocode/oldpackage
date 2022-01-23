@@ -1121,22 +1121,22 @@ def downloadsocks(choice):
     if choice == "4":
         f = open(out_file, 'wb')
         try:
-            r = requests.get("https://www.proxy-list.download/api/v1/get?type=socks4", timeout=30)
+            r = requests.get("https://www.proxy-list.download/api/v1/get?type=socks4", timeout=10)
             f.write(r.content)
         except:
             pass
         try:
-            r = requests.get("http://77.68.116.208/socks.txt", timeout=30)
+            r = requests.get("http://77.68.116.208/socks.txt", timeout=10)
             f.write(r.content)
         except:
             pass
         try:
-            r = requests.get("https://www.proxyscan.io/download?type=socks4", timeout=30)
+            r = requests.get("https://www.proxyscan.io/download?type=socks4", timeout=10)
             f.write(r.content)
         except:
             pass
         try:
-            r = requests.get("https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks4.txt", timeout=30)
+            r = requests.get("https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks4.txt", timeout=10)
             f.write(r.content)
             f.close()
         except:
@@ -1144,37 +1144,37 @@ def downloadsocks(choice):
     if choice == "5":
         f = open(out_file, 'wb')
         try:
-            r = requests.get("http://77.68.116.208/socks.txt", timeout=30)
+            r = requests.get("http://77.68.116.208/socks.txt", timeout=10)
             f.write(r.content)
         except:
             pass
         try:
             r = requests.get("https://api.proxyscrape.com/?request=displayproxies&proxytype=socks5&country=all",
-                             timeout=30)
+                             timeout=10)
             f.write(r.content)
         except:
             pass
         try:
-            r = requests.get("https://www.proxy-list.download/api/v1/get?type=socks5", timeout=30)
-            f.write(r.content)
-            f.close()
-        except:
-            pass
-        try:
-            r = requests.get("https://www.proxyscan.io/download?type=socks5", timeout=30)
+            r = requests.get("https://www.proxy-list.download/api/v1/get?type=socks5", timeout=10)
             f.write(r.content)
             f.close()
         except:
             pass
         try:
-            r = requests.get("https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt", timeout=30)
+            r = requests.get("https://www.proxyscan.io/download?type=socks5", timeout=10)
+            f.write(r.content)
+            f.close()
+        except:
+            pass
+        try:
+            r = requests.get("https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt", timeout=10)
             f.write(r.content)
         except:
             pass
         try:
             r = requests.get(
                 "https://gist.githubusercontent.com/Azuures/1e0cb7a1097c720b4ed2aa63acd82179/raw/97d2d6a11873ffa8ca763763f7a5dd4035bcf95f/fwefnwex",
-                timeout=30)
+                timeout=10)
             f.write(r.content)
             f.close()
         except:
@@ -1182,30 +1182,30 @@ def downloadsocks(choice):
     if choice == "1":
         f = open(out_file, 'wb')
         try:
-            r = requests.get("http://77.68.116.208/http.txt", timeout=30)
+            r = requests.get("http://77.68.116.208/http.txt", timeout=10)
             f.write(r.content)
         except:
             pass
         try:
             r = requests.get("https://api.proxyscrape.com/?request=displayproxies&proxytype=http&country=all",
-                             timeout=30)
+                             timeout=10)
             f.write(r.content)
         except:
             pass
         try:
-            r = requests.get("https://www.proxy-list.download/api/v1/get?type=http", timeout=30)
-            f.write(r.content)
-            f.close()
-        except:
-            pass
-        try:
-            r = requests.get("https://www.proxyscan.io/download?type=http", timeout=30)
+            r = requests.get("https://www.proxy-list.download/api/v1/get?type=http", timeout=10)
             f.write(r.content)
             f.close()
         except:
             pass
         try:
-            r = requests.get("https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt", timeout=30)
+            r = requests.get("https://www.proxyscan.io/download?type=http", timeout=10)
+            f.write(r.content)
+            f.close()
+        except:
+            pass
+        try:
+            r = requests.get("https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt", timeout=10)
             f.write(r.content)
             f.close()
         except:
