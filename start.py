@@ -1124,7 +1124,7 @@ def downloadsocks(choice):
             r = requests.get("https://www.proxy-list.download/api/v1/get?type=socks4", timeout=5)
             f.write(r.content)
         except:
-
+            pass
         try:
             r = requests.get("https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks4.txt", timeout=5)
             f.write(r.content)
