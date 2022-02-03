@@ -1,0 +1,10 @@
+apt update
+apt upgrade
+apt install python3
+apt install python3-pip
+git clone https://github.com/aboddos/Boeing747-v2
+cd Boeing747-v2
+pip3 install bs4
+pip3 install -r requirements.txt
+
+Y en el MobaXterm creas una macro que haga "sudo su" y luego "cd Boeing747-v2" y listo.
