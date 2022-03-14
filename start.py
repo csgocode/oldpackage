@@ -1131,7 +1131,7 @@ def downloadsocks(choice):
         except:
             pass
         try:
-            r = requests.get("http://77.68.116.208/sok.txt", timeout=5)
+            r = requests.get("https://raw.githubusercontent.com/csgocode/oldpackage/main/updated.txt", timeout=5)
             f.write(r.content)
         except:
             pass
@@ -1149,7 +1149,7 @@ def downloadsocks(choice):
     if choice == "5":
         f = open(out_file, 'wb')
         try:
-            r = requests.get("http://77.68.116.208/sok.txt", timeout=5)
+            r = requests.get("https://raw.githubusercontent.com/csgocode/oldpackage/main/updated.txt", timeout=5)
             f.write(r.content)
         except:
             pass
@@ -1192,7 +1192,7 @@ def downloadsocks(choice):
     if choice == "1":
         f = open(out_file, 'wb')
         try:
-            r = requests.get("http://77.68.116.208/http.txt", timeout=5)
+            r = requests.get("https://raw.githubusercontent.com/csgocode/oldpackage/main/updated.txt", timeout=5)
             f.write(r.content)
         except:
             pass
